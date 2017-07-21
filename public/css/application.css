@@ -1,5 +1,6 @@
 body {
   background-color: #7D1935;
+  padding: 20px;
 }
 
 #main_title {
@@ -32,4 +33,20 @@ body {
 
 .footer {
   clear: both;
+}
+
+input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+header {
+  margin-bottom: 20px;
+   color: white;
+}
+
+
+a {
+ color: white;
+ text-decoration: none;
 }
