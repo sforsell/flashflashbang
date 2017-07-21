@@ -2,10 +2,12 @@
 
 <div class="wrapper">
 
-  <div class="left">
+  <div class="center">
   <% @decks.each do |deck| %>
 
-  <%= deck.name %>
+  <div class="space">
+    <a href="/game/<%= deck.id %>/show"> <%= deck.name %> </a>
+  </div>
 
   <% end %>
 
