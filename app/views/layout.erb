@@ -19,7 +19,8 @@
 </head>
 <body>
   <header>
-    <a href="/">HOME</a> || <a href="/session/new">LOG IN</a> || <a href="/users/new">SIGN UP</a>
+    <a href="/">HOME</a> | <% if !logged_in? %> <a href="/sessions/new">LOG IN</a> | <a href="/users/new">SIGN UP</a> <% else %>
+    <a href="/logout"> LOG OUT </a> | <a href="users/show" > <%= current_user.username.upcase %> STATS</a><% end %>
   </header>
   <%= yield %>
 </body>
