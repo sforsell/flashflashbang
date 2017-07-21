@@ -1,8 +1,15 @@
 <h1 id="main_title">Welcome to Flash 'em!</h1>
 
 <div class="wrapper">
-  <div class="left"></div>
-  <div class="center"></div>
-  <div class="right"></div>
+
+  <div class="left">
+  <% @decks.each do |deck| %>
+
+  <%= deck.name %>
+
+  <% end %>
+
+  </div>
+
   <div class="footer"></div>
 </div>
