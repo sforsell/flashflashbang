@@ -39,7 +39,7 @@ get "/users/show" do
   if logged_in?
     "Welcome #{current_user.username}! Here are your stats!"
   else
-    @errors = ["You have to be logged in for that!"]
+    @error = ["You have to be logged in for that!"]
     erb :"/users/login"
   end
 
