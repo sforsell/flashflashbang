@@ -11,28 +11,29 @@ body {
 .wrapper {
   width: 960px;
   margin: 0 auto;
+
 }
 
-.left, .center, .right {
-  float: left;
-  width: 290px;
+  .center {
   height: 200px;
+  margin: 0 auto;
+  padding: 15px;
   border: 5px solid #F5F3EE;
   background-color: #4A96AD;
 }
 
-.left {
-  margin-left: 12px;
-}
-
-.center {
-  margin: 0 18px;
-}
-
-
 
 .footer {
   clear: both;
+}
+
+
+.space {
+  display: inline;
+  clear: left;
+  margin: 70px;
+  width: 40px;
+  font-size: 20px;
 }
 
 input {
