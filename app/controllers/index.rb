@@ -36,7 +36,12 @@ post "/sessions" do
 end
 
 get "/users/show" do
-  "Welcome #{current_user.username}! Here are your stats!"
+  if logged_in?
+    "Welcome #{current_user.username}! Here are your stats!"
+  else
+    @errors = ["You have to be logged in for that!"]
+    erb :"/users/login"
+  end
 
 end
 
