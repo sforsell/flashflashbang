@@ -1,0 +1,11 @@
+<div class="container">
+  <%= @card.question %>
+  <form action="/game/<%= params[:deck_id] %>/show/<%= @card.id %>" method="post">
+    Answer: <input name="answer" type="text">
+    <br>
+    <button type="submit"> Guess! </button>
+  </form>
+
+  <%= @message %>
+
+</div>
