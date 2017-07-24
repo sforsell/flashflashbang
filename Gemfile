@@ -19,6 +19,8 @@ gem 'pry-byebug'
 
 gem 'bcrypt'
 
+gem 'rb-readline'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

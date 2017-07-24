@@ -57,6 +57,7 @@ GEM
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
     rake (12.0.0)
+    rb-readline (0.5.4)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
       rspec-expectations (~> 3.6.0)
@@ -108,6 +109,7 @@ DEPENDENCIES
   pry-byebug
   rack-test
   rake (~> 12.0.0)
+  rb-readline
   rspec (~> 3.5)
   shotgun
   shoulda-matchers
@@ -115,7 +117,7 @@ DEPENDENCIES
   sinatra-contrib
 
 RUBY VERSION
-   ruby 2.3.4p301
+   ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.6
+   1.15.1
